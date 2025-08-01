@@ -1,10 +1,10 @@
 **(Q1) Could you clarify if this date should be considered the start of the non-compliance?**
 
-由于在SHECA之前的签发过程中未曾发现此类情况，且SHECA未对地址信息进行系统校验，所有校验均依赖审核人员的人工核查。SHECA认为这种不合规情况长期存在，因此无法确定不合规具体开始发生的时间。
+As SHECA had never identified such an issue in its previous issuance processes, and since no system-based verification mechanism was in place for address information—with all verification work relying entirely on manual checks by auditors—SHECA has determined that this non-compliant situation has existed for a relatively long period, making it impossible to pinpoint its exact starting time.
 
 **(Q2) Can you elaborate on “downstream agent” and “Wubi input method” to help us better understand this certificate issuance interface?**
 
-“downstream agent”意思是SHECA的SSL证书代理商
+“downstream agent”：SHECA's SSL certificate reseller
 
 “Wubi input method”:Wubi Input Method: Wubi Input Method is a Chinese character input method used in mainland China. It breaks down Chinese characters into strokes and components and uses five keyboard areas for input based on the shape and order of the strokes. This input method can only input Chinese characters.
 
@@ -14,11 +14,11 @@ But agent typos "tmh",(t is closest key to y key on the keyboard), results 币
 
 **(Q3) Specific to factor #1, can you elaborate on how this contributing factor avoided detection?**
 
-因为SHECA的审核系统中并没有对地理信息的自动校验，此类信息错误只能通过外部审计或内部审计发现，本次是在合规人员对本周证书抽查的过程中发现了次问题。
+Because SHECA's audit system does not automatically verify geographic information, such information errors can only be discovered through external or internal audits. This issue was discovered during the compliance staff's spot check of certificates this week.
 
 **(Q4) Could you please elaborate on why these factors are not considered interactive?**
 
-抱歉，我对IBR中 Interaction with other factors 的描述理解存在不清晰，正如您说的 缺少自动化的验证大大增加了审核出现错误的风险，我已调整了相关描述。
+I apologize for my misunderstanding of the description of "**Interaction with other factors**" in the IBR. As you said, the lack of automated verification greatly increases the risk of errors in the audit. I have adjusted the relevant description.
 
 **Clarification on the Overabundance of Training-Related Items in SHECA's Action Items Section**
 

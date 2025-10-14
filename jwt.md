@@ -116,18 +116,11 @@ Thereafter, the client must include this JWT in every communication with the ser
 > ```
 
 ### 4. SHECA Implementation Steps
+1. SHECA generates public and private keys in the order system. Partners download the private key through the SHECA interface. Only the partner's account can access this private key.
 
-1. SHECA generates public and private keys in the order system. Partners download the private keys through the SHECA interface.
+2. When requesting SHECA's openAPI, the partner uses the obtained private key to generate a JWT token and includes "Authorization: Bearer token" in the subsequent request header.
 
-2. When requesting the SHECA openAPI, partners use their private key to sign the request header and include "Authorization: Bearer <token>" in the request header.
-
-3. After receiving the request, SHECA obtains the user ID in the JWT and queries the associated public key. SHECA uses the public key to verify the JWT signature. If verification passes, the request is processed normally. If verification fails, the request is rejected.
-
-
-
-
-
-
+3. After receiving the request, SHECA obtains the user ID in the JWT and queries the associated public key. SHECA uses the public key to verify the token's signature. If verification passes, the request is processed normally; if verification fails, the request is rejected.
 
 **Note: These public and private keys are only used for permission verification between SHECA and its partners, mainly to prevent illegal requests. The scope of application of these public and private keys is very limited.**
 
